@@ -1,0 +1,36 @@
+.layout {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; /* Add padding between panes */
+}
+
+.left-pane, .right-pane {
+  width: 50%; /* Reduce width to account for padding */
+  padding: 20px; /* Add padding between panes */
+}
+
+/* Add padding between cards */
+.UserCard:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  button {
+    max-height: 20px;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-group button:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.add-user-form .button-group button:not(:last-child) {
+  margin-right: 10px;
+}
